@@ -8,7 +8,15 @@ import Works from './components/Works'
 // styled component
 const Container = styled.div`
   height:100vh;
-  background-color: rebeccapurple;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none; // only works for firefox
+  color: white;
+  background: url("../public/img/bg.jpeg");
+  &::-webkit-scrollbar{
+    display: none;
+  } 
 `
 
 
